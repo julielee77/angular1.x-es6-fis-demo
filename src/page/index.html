@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular 1.x es6 fis demo</title>
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <base href="/">
+</head>
+<body>
+    <div class="page-wrapper">
+        <ul class="navbar">
+            <li>  
+                <a ui-sref="home" ui-sref-active="active">Home</a>
+                <a ui-sref="orders" ui-sref-active="active">Orders list</a>
+            </li>
+        </ul>
+        <div ui-view></div>
+    </div>
+    <script src="/dep/mod.js"></script>
+    <script>
+        require.async('/src/app/app.js');
+    </script>
+</body>
+</html>

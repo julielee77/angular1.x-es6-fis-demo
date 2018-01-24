@@ -1,0 +1,1 @@
+BUILD_SUBMITTER -x -m baidu/bdg-platform/habo -c "cd baidu/bdg-platform/habo && mkdir output &&cp BCLOUD ./output/" -u ./

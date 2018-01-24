@@ -1,0 +1,12 @@
+<div class="page-container page-orders">
+    <h3>orders list</h3>
+    <ul>
+        <li 
+            ng-repeat="order in ctrl.orders track by $index">
+            <a 
+                ui-shref="orders.detail({ orderId: order.id })">
+                {{order.title}}
+            </a>
+        </li>
+    </ul>
+</div>
